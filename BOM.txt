@@ -1,0 +1,25 @@
+Connectors:
+2x SwitchCraft 35RAPC2AV (J101, J102)
+2x Neutrik NMJ4HHD2 mono 1/4 inch jacks (J201, J202)
+1x Neutrik NMJ6HFD2 stereo 1/4 inch jack (J301)
+*1x M08x2 eurorack power connector (J401) - 90 degree
+*2x DIP-8 sockets (IC201, IC301)
+
+Potentiometers:
+1x 50K audio taper ALPS RK09L12B0A31 dual pot (P101)
+
+Semiconductors:
+*1x SOIC-8 LF353D op amp (IC101)
+*2x DIP-8  LF353N op amp (IC201, IC301)
+
+Capacitors:
+*3x 0603 .1uF X7R Capacitor (C401, C402, C403)
+
+Resistors:
+*4x 0603 200k 5% (R101, R102, R301, R302)
+*8x 0603 100k 5% (R103, R104, R201, R202, R203, R204, R303, R304)
+*2x 0603   1k 5% (R205, R206)
+*2x 0603  100 5% (R305, R306)
+
+Mouser Link to Project:
+http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=ae4eb95cf5
