@@ -6,22 +6,22 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -45,7 +45,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -65,12 +65,21 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -106,6 +115,7 @@
 <wire x1="93.98" y1="0" x2="93.98" y2="35.56" width="0" layer="20"/>
 <wire x1="93.98" y1="35.56" x2="0" y2="35.56" width="0" layer="20"/>
 <wire x1="0" y1="35.56" x2="0" y2="0" width="0" layer="20"/>
+<text x="39.37" y="6.35" size="1.778" layer="21">Headphone Amp Alpha</text>
 </plain>
 <libraries>
 <library name="eurorack">
@@ -385,6 +395,43 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
+<package name="OSHW-LOGO-L">
+<polygon width="0.15" layer="21">
+<vertex x="0.9209" y="-2.2231" curve="9.497479"/>
+<vertex x="1.2751" y="-2.0407"/>
+<vertex x="2.1548" y="-2.758"/>
+<vertex x="2.758" y="-2.1548"/>
+<vertex x="2.0407" y="-1.2751" curve="18.998791"/>
+<vertex x="2.3446" y="-0.5413"/>
+<vertex x="3.4739" y="-0.4265"/>
+<vertex x="3.4739" y="0.4265"/>
+<vertex x="2.3446" y="0.5413" curve="18.998791"/>
+<vertex x="2.0407" y="1.2751"/>
+<vertex x="2.758" y="2.1548"/>
+<vertex x="2.1548" y="2.758"/>
+<vertex x="1.2751" y="2.0407" curve="18.998791"/>
+<vertex x="0.5413" y="2.3446"/>
+<vertex x="0.4265" y="3.4739"/>
+<vertex x="-0.4265" y="3.4739"/>
+<vertex x="-0.5413" y="2.3446" curve="18.998791"/>
+<vertex x="-1.2751" y="2.0407"/>
+<vertex x="-2.1548" y="2.758"/>
+<vertex x="-2.758" y="2.1548"/>
+<vertex x="-2.0407" y="1.2751" curve="18.998791"/>
+<vertex x="-2.3446" y="0.5413"/>
+<vertex x="-3.4739" y="0.4265"/>
+<vertex x="-3.4739" y="-0.4265"/>
+<vertex x="-2.3446" y="-0.5413" curve="18.998791"/>
+<vertex x="-2.0407" y="-1.2751"/>
+<vertex x="-2.758" y="-2.1548"/>
+<vertex x="-2.1548" y="-2.758"/>
+<vertex x="-1.2751" y="-2.0407" curve="9.497479"/>
+<vertex x="-0.9209" y="-2.2231"/>
+<vertex x="-0.4186" y="-1.0105" curve="-67.504205"/>
+<vertex x="-1.0938" y="0" curve="-247.497204"/>
+<vertex x="0.4186" y="-1.0105"/>
+</polygon>
+</package>
 </packages>
 </library>
 </libraries>
@@ -569,41 +616,113 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J401" library="eurorack" package="POWER_16" value="POWER_SIMPLE16" x="80.01" y="27.94"/>
-<element name="IC101" library="linear" package="SO08" value="LF353D" x="7.62" y="22.86" smashed="yes" rot="R180">
-<attribute name="NAME" x="10.287" y="23.749" size="0.6096" layer="25" rot="R270"/>
+<element name="J401" library="eurorack" package="POWER_16" value="POWER_SIMPLE16" x="80.01" y="27.94" smashed="yes">
+<attribute name="NAME" x="72.39" y="31.115" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="P101" library="russruss" package="ALPSRK09L12B0A31" value="DUALPOT 50K" x="27.4" y="7.62" rot="MR270"/>
-<element name="R102" library="SparkFun" package="0603-RES" value="200k" x="10.16" y="15.24" rot="R270"/>
-<element name="R101" library="SparkFun" package="0603-RES" value="200k" x="10.16" y="30.48"/>
-<element name="R104" library="SparkFun" package="0603-RES" value="100k" x="7.62" y="17.78" rot="R180"/>
-<element name="R103" library="SparkFun" package="0603-RES" value="100k" x="10.16" y="27.94" rot="R180"/>
-<element name="IC201" library="linear" package="DIL08" value="LF353N" x="16.51" y="22.86" rot="MR180"/>
-<element name="R201" library="SparkFun" package="0603-RES" value="100k" x="13.97" y="31.75" rot="R180"/>
-<element name="R202" library="SparkFun" package="0603-RES" value="100k" x="19.685" y="12.7" rot="R270"/>
-<element name="R204" library="SparkFun" package="0603-RES" value="100k" x="16.51" y="17.145"/>
-<element name="R203" library="SparkFun" package="0603-RES" value="100k" x="13.97" y="29.21"/>
-<element name="J201" library="russruss" package="NEUTRIK_NMJ4HHD2" value="MONOJACKNEUTRIK" x="43.815" y="10.795" rot="MR270"/>
-<element name="J202" library="russruss" package="NEUTRIK_NMJ4HHD2" value="MONOJACKNEUTRIK" x="63.42" y="10.795" rot="MR270"/>
-<element name="R205" library="SparkFun" package="0603-RES" value="1k" x="33.02" y="15.24" rot="R180"/>
-<element name="R206" library="SparkFun" package="0603-RES" value="1k" x="55.88" y="20.32" rot="R90"/>
+<element name="IC101" library="linear" package="SO08" value="LF353D" x="7.62" y="22.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="10.287" y="23.749" size="0.8128" layer="25" rot="R270"/>
+</element>
+<element name="P101" library="russruss" package="ALPSRK09L12B0A31" value="DUALPOT 50K" x="27.4" y="7.62" smashed="yes" rot="MR270">
+<attribute name="NAME" x="21.05" y="8.89" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="35.02" y="8.89" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R102" library="SparkFun" package="0603-RES" value="200k" x="10.16" y="15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="11.43" y="17.653" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="9.017" y="16.256" size="0.4064" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="R101" library="SparkFun" package="0603-RES" value="200k" x="10.16" y="30.48" smashed="yes">
+<attribute name="NAME" x="7.493" y="31.75" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="9.144" y="29.337" size="0.4064" layer="27" font="vector"/>
+</element>
+<element name="R104" library="SparkFun" package="0603-RES" value="100k" x="7.62" y="17.78" smashed="yes" rot="R180">
+<attribute name="NAME" x="5.08" y="19.177" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="8.636" y="18.923" size="0.4064" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="R103" library="SparkFun" package="0603-RES" value="100k" x="10.16" y="27.94" smashed="yes" rot="R180">
+<attribute name="NAME" x="5.715" y="26.924" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="11.176" y="29.083" size="0.4064" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="IC201" library="linear" package="DIL08" value="LF353N" x="16.51" y="22.86" smashed="yes" rot="MR180">
+<attribute name="NAME" x="11.176" y="25.781" size="1.27" layer="26" ratio="10" rot="MR270"/>
+<attribute name="VALUE" x="12.954" y="23.495" size="1.27" layer="28" ratio="10" rot="MR180"/>
+</element>
+<element name="R201" library="SparkFun" package="0603-RES" value="100k" x="13.97" y="31.75" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.415" y="28.702" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="14.986" y="32.893" size="0.4064" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="R202" library="SparkFun" package="0603-RES" value="100k" x="19.685" y="12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.701" y="15.621" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="18.542" y="13.716" size="0.4064" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="R204" library="SparkFun" package="0603-RES" value="100k" x="16.51" y="17.145" smashed="yes">
+<attribute name="NAME" x="14.605" y="15.367" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="15.494" y="16.002" size="0.4064" layer="27" font="vector"/>
+</element>
+<element name="R203" library="SparkFun" package="0603-RES" value="100k" x="13.97" y="29.21" smashed="yes">
+<attribute name="NAME" x="13.081" y="33.02" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="12.954" y="28.067" size="0.4064" layer="27" font="vector"/>
+</element>
+<element name="J201" library="russruss" package="NEUTRIK_NMJ4HHD2" value="MONOJACKNEUTRIK" x="43.815" y="10.795" smashed="yes" rot="MR270">
+<attribute name="NAME" x="40.005" y="14.605" size="1.27" layer="26" rot="MR180"/>
+</element>
+<element name="J202" library="russruss" package="NEUTRIK_NMJ4HHD2" value="MONOJACKNEUTRIK" x="63.42" y="10.795" smashed="yes" rot="MR270">
+<attribute name="NAME" x="61.595" y="15.16" size="1.27" layer="26" rot="MR180"/>
+</element>
+<element name="R205" library="SparkFun" package="0603-RES" value="1k" x="33.02" y="15.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="32.893" y="13.97" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="34.036" y="16.383" size="0.4064" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="R206" library="SparkFun" package="0603-RES" value="1k" x="55.88" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="54.991" y="22.352" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="57.023" y="19.304" size="0.4064" layer="27" font="vector" rot="R90"/>
+</element>
 <element name="IC301" library="linear" package="DIL08" value="LF353N" x="27.94" y="26.67" rot="MR90"/>
-<element name="R301" library="SparkFun" package="0603-RES" value="200k" x="26.67" y="29.21" rot="R90"/>
-<element name="R302" library="SparkFun" package="0603-RES" value="200k" x="38.1" y="27.94"/>
-<element name="R304" library="SparkFun" package="0603-RES" value="100k" x="34.29" y="26.67" rot="R90"/>
-<element name="R303" library="SparkFun" package="0603-RES" value="100k" x="21.59" y="24.13" rot="R90"/>
-<element name="R305" library="SparkFun" package="0603-RES" value="100" x="77.47" y="19.05" rot="R90"/>
-<element name="R306" library="SparkFun" package="0603-RES" value="100" x="69.596" y="11.43" rot="R180"/>
-<element name="J301" library="russruss" package="NEUTRIK_NMJ6HFD2" value="STEREOJACK" x="82.55" y="10.795" rot="MR270"/>
-<element name="C401" library="SparkFun" package="0603-CAP" value=".1uF" x="3.81" y="22.86" rot="R90"/>
-<element name="C402" library="SparkFun" package="0603-CAP" value=".1uF" x="12.7" y="22.86"/>
-<element name="C403" library="SparkFun" package="0603-CAP" value=".1uF" x="27.94" y="25.4" rot="R90"/>
+<element name="R301" library="SparkFun" package="0603-RES" value="200k" x="26.67" y="29.21" smashed="yes" rot="R90">
+<attribute name="NAME" x="25.527" y="31.242" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="27.813" y="28.194" size="0.4064" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="R302" library="SparkFun" package="0603-RES" value="200k" x="38.1" y="27.94" smashed="yes">
+<attribute name="NAME" x="36.703" y="29.464" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="37.084" y="26.797" size="0.4064" layer="27" font="vector"/>
+</element>
+<element name="R304" library="SparkFun" package="0603-RES" value="100k" x="34.29" y="26.67" smashed="yes" rot="R90">
+<attribute name="NAME" x="35.941" y="29.21" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="35.433" y="25.654" size="0.4064" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="R303" library="SparkFun" package="0603-RES" value="100k" x="21.59" y="24.13" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.828" y="23.241" size="0.4064" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="22.733" y="23.114" size="0.4064" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="R305" library="SparkFun" package="0603-RES" value="100" x="77.47" y="19.05" smashed="yes" rot="R90">
+<attribute name="NAME" x="79.883" y="17.272" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="78.613" y="18.034" size="0.4064" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="R306" library="SparkFun" package="0603-RES" value="100" x="69.596" y="11.43" smashed="yes" rot="R180">
+<attribute name="NAME" x="70.231" y="9.652" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="70.612" y="12.573" size="0.4064" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="J301" library="russruss" package="NEUTRIK_NMJ6HFD2" value="STEREOJACK" x="82.55" y="10.795" smashed="yes" rot="MR270">
+<attribute name="NAME" x="80.645" y="13.97" size="1.27" layer="26" rot="MR180"/>
+</element>
+<element name="C401" library="SparkFun" package="0603-CAP" value=".1uF" x="3.81" y="22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="2.54" y="21.463" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="4.953" y="21.844" size="0.4064" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C402" library="SparkFun" package="0603-CAP" value=".1uF" x="12.7" y="22.86" smashed="yes">
+<attribute name="NAME" x="11.811" y="23.622" size="0.4064" layer="25" font="vector"/>
+<attribute name="VALUE" x="11.684" y="21.717" size="0.4064" layer="27" font="vector"/>
+</element>
+<element name="C403" library="SparkFun" package="0603-CAP" value=".1uF" x="27.94" y="25.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.083" y="23.368" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="29.083" y="24.384" size="0.4064" layer="27" font="vector" rot="R90"/>
+</element>
 <element name="J101" library="russruss" package="SWITCHCRAFT_35RAPC2AV" value="MONOJACKSWITCHCRAFT3" x="5.334" y="7.874" smashed="yes" rot="MR270">
 <attribute name="NAME" x="1.366" y="18.114" size="1.27" layer="26" rot="MR180"/>
 </element>
 <element name="J102" library="russruss" package="SWITCHCRAFT_35RAPC2AV" value="MONOJACKSWITCHCRAFT3" x="16.002" y="7.874" smashed="yes" rot="MR270">
-<attribute name="NAME" x="10.256" y="17.352" size="1.27" layer="26" rot="MR180"/>
+<attribute name="NAME" x="11.526" y="17.352" size="1.27" layer="26" rot="MR180"/>
 </element>
+<element name="U$1" library="SparkFun" package="OSHW-LOGO-L" value="" x="40.64" y="10.414"/>
 </elements>
 <signals>
 <signal name="+12V">
@@ -866,6 +985,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="J201" pad="T"/>
 <wire x1="33.87" y1="15.24" x2="33.87" y2="15.3" width="0.254" layer="1"/>
 <wire x1="33.87" y1="15.3" x2="35.715" y2="17.145" width="0.254" layer="1"/>
+<via x="33.87" y="15.3" extent="1-16" drill="0.6" shape="square"/>
 </signal>
 <signal name="N$13">
 <contactref element="R206" pad="1"/>
