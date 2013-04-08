@@ -1567,14 +1567,14 @@ Change this to user-controllable max of 5v peak to peak.</text>
 <attribute name="NAME" x="88.9" y="132.715" size="1.778" layer="95"/>
 <attribute name="VALUE" x="88.9" y="134.62" size="1.778" layer="96"/>
 </instance>
-<instance part="P101" gate="G$1" x="48.26" y="144.78" rot="R270"/>
-<instance part="P101" gate="G$2" x="48.26" y="132.08" rot="R270"/>
+<instance part="P101" gate="G$1" x="48.26" y="144.78" rot="R90"/>
+<instance part="P101" gate="G$2" x="48.26" y="132.08" rot="R90"/>
 <instance part="GND3" gate="1" x="58.42" y="121.92"/>
 <instance part="IC101" gate="P" x="86.36" y="149.86"/>
 <instance part="P+2" gate="1" x="86.36" y="160.02"/>
 <instance part="P-2" gate="1" x="86.36" y="139.7"/>
 <instance part="R102" gate="G$1" x="66.04" y="127" rot="R180"/>
-<instance part="R101" gate="G$1" x="68.58" y="147.32" rot="R180"/>
+<instance part="R101" gate="G$1" x="68.58" y="149.86" rot="R180"/>
 <instance part="GND4" gate="1" x="76.2" y="121.92"/>
 <instance part="R104" gate="G$1" x="88.9" y="121.92" rot="R180"/>
 <instance part="R103" gate="G$1" x="88.9" y="165.1" rot="R180"/>
@@ -1679,14 +1679,14 @@ Change this to user-controllable max of 5v peak to peak.</text>
 <pinref part="J102" gate="J$1" pin="SLEEVE"/>
 </segment>
 <segment>
-<pinref part="P101" gate="G$1" pin="E"/>
-<wire x1="55.88" y1="144.78" x2="58.42" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="144.78" x2="58.42" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="P101" gate="G$2" pin="E"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="P101" gate="G$1" pin="A"/>
 <wire x1="58.42" y1="132.08" x2="58.42" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="144.78" x2="58.42" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="P101" gate="G$2" pin="A"/>
 <wire x1="55.88" y1="132.08" x2="58.42" y2="132.08" width="0.1524" layer="91"/>
 <junction x="58.42" y="132.08"/>
-<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="IC101" gate="A" pin="+IN"/>
@@ -1770,18 +1770,11 @@ Change this to user-controllable max of 5v peak to peak.</text>
 <wire x1="25.4" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="144.78" x2="27.94" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="137.16" x2="25.4" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="144.78" x2="40.64" y2="144.78" width="0.1524" layer="91"/>
-<junction x="27.94" y="144.78"/>
-<pinref part="P101" gate="G$1" pin="A"/>
 <pinref part="J101" gate="J$1" pin="TIP"/>
 <pinref part="J102" gate="J$1" pin="NORM"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<wire x1="25.4" y1="132.08" x2="40.64" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="P101" gate="G$2" pin="A"/>
-<pinref part="J102" gate="J$1" pin="TIP"/>
+<pinref part="P101" gate="G$1" pin="E"/>
+<wire x1="40.64" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
+<junction x="27.94" y="144.78"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1798,28 +1791,14 @@ Change this to user-controllable max of 5v peak to peak.</text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="IC101" gate="A" pin="-IN"/>
 <pinref part="R101" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="147.32" x2="73.66" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="R103" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="165.1" x2="73.66" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="165.1" x2="73.66" y2="147.32" width="0.1524" layer="91"/>
-<junction x="73.66" y="147.32"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R101" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="147.32" x2="63.5" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="P101" gate="G$1" pin="S"/>
-<wire x1="63.5" y1="139.7" x2="48.26" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="P101" gate="G$2" pin="S"/>
-<pinref part="R102" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="127" x2="60.96" y2="127" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="165.1" x2="73.66" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="149.86" x2="73.66" y2="147.32" width="0.1524" layer="91"/>
+<junction x="73.66" y="149.86"/>
+<pinref part="IC101" gate="A" pin="-IN"/>
+<wire x1="73.66" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RIGHT" class="0">
@@ -1984,6 +1963,28 @@ Change this to user-controllable max of 5v peak to peak.</text>
 <wire x1="149.86" y1="66.04" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="J301" gate="G$1" pin="RING"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="P101" gate="G$2" pin="S"/>
+<wire x1="48.26" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R102" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="137.16" x2="60.96" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="P101" gate="G$1" pin="S"/>
+<wire x1="48.26" y1="149.86" x2="63.5" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="R101" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="J102" gate="J$1" pin="TIP"/>
+<pinref part="P101" gate="G$2" pin="E"/>
+<wire x1="25.4" y1="132.08" x2="40.64" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
