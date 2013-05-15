@@ -1,4 +1,6 @@
-This is a nascent, unfinished design for a small headphone amp/line output module for eurorack modular synthesizers.
+This is a tested design for a small headphone amp/line output module for eurorack modular synthesizers.
+
+Most of the construction is SMT, with the exception of user-replaceable socketted op-amps.
 
 Please use the BOM.txt to order parts.
 
