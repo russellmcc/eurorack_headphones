@@ -1,5 +1,5 @@
 Connectors:
-2x SwitchCraft 35RAPC2AV (J101, J102)
+2x JP302M-style jacks (available from thonk or modular addict)
 2x Neutrik NMJ4HHD2 mono 1/4 inch jacks (J201, J202)
 1x Neutrik NMJ6HFD2 stereo 1/4 inch jack (J301)
 1x M08x2 eurorack power connector (J401) - 90 degree

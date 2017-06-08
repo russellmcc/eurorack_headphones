@@ -4,3 +4,4 @@
 *.log
 *.s#*
 *.plt
+**/_autosave*
