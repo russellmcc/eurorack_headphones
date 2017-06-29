@@ -28,8 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:eurorack
-LIBS:Common-Parts-Library
 LIBS:eurorack_headphones-cache
 EELAYER 25 0
 EELAYER END
@@ -219,9 +217,7 @@ Wire Wire Line
 	2900 1900 2900 1400
 Connection ~ 1950 1900
 Wire Wire Line
-	1950 1900 2400 1900
-Wire Wire Line
-	2400 1900 2900 1900
+	1950 1900 2900 1900
 Wire Wire Line
 	2400 1400 2400 1900
 Wire Wire Line
@@ -229,9 +225,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 1200 2000 1650
 Wire Wire Line
-	1850 1200 2000 1200
-Wire Wire Line
-	2000 1200 2100 1200
+	1850 1200 2100 1200
 Connection ~ 1950 1100
 Wire Wire Line
 	1850 1100 1950 1100
@@ -239,13 +233,7 @@ Connection ~ 1950 1500
 Wire Wire Line
 	1850 950  1950 950 
 Wire Wire Line
-	1950 950  1950 1100
-Wire Wire Line
-	1950 1100 1950 1500
-Wire Wire Line
-	1950 1500 1950 1900
-Wire Wire Line
-	1950 1900 1950 2100
+	1950 950  1950 2100
 Wire Wire Line
 	1850 1500 1950 1500
 Wire Wire Line
@@ -302,9 +290,7 @@ $EndComp
 Wire Wire Line
 	3750 1400 4200 1400
 Wire Wire Line
-	3750 650  3750 850 
-Wire Wire Line
-	3750 850  3750 1400
+	3750 650  3750 1400
 Wire Wire Line
 	3750 850  3350 850 
 Wire Wire Line
@@ -315,15 +301,11 @@ Wire Wire Line
 Wire Wire Line
 	4900 650  4900 1300
 Wire Wire Line
-	4800 1300 4900 1300
-Wire Wire Line
-	4900 1300 5200 1300
+	4800 1300 5200 1300
 Wire Wire Line
 	4200 1200 4000 1200
 Wire Wire Line
-	4000 1200 4000 2450
-Wire Wire Line
-	4000 2450 4000 3150
+	4000 1200 4000 3150
 $Comp
 L R R104
 U 1 1 59363FD9
@@ -340,15 +322,11 @@ Wire Wire Line
 Wire Wire Line
 	4900 1900 4900 2550
 Wire Wire Line
-	4750 2550 4900 2550
-Wire Wire Line
-	4900 2550 5250 2550
+	4750 2550 5250 2550
 Wire Wire Line
 	4200 1900 3750 1900
 Wire Wire Line
-	3750 1900 3750 2100
-Wire Wire Line
-	3750 2100 3750 2650
+	3750 1900 3750 2650
 Wire Wire Line
 	3750 2650 4150 2650
 Wire Wire Line
@@ -501,9 +479,7 @@ F 3 "" H 2050 3650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1500 4400 1750 4400
-Wire Wire Line
-	1750 4400 1850 4400
+	1500 4400 1850 4400
 Wire Wire Line
 	1750 4400 1750 3650
 Wire Wire Line
@@ -514,9 +490,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 3650 2650 4300
 Wire Wire Line
-	2450 4300 2650 4300
-Wire Wire Line
-	2650 4300 2800 4300
+	2450 4300 2800 4300
 $Comp
 L R R204
 U 1 1 5936525C
@@ -540,9 +514,7 @@ F 3 "" H 1350 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1500 5650 1750 5650
-Wire Wire Line
-	1750 5650 1850 5650
+	1500 5650 1850 5650
 Wire Wire Line
 	1750 5650 1750 4900
 Wire Wire Line
@@ -553,15 +525,11 @@ Wire Wire Line
 Wire Wire Line
 	2650 4900 2650 5550
 Wire Wire Line
-	2450 5550 2650 5550
-Wire Wire Line
-	2650 5550 2800 5550
+	2450 5550 2800 5550
 Wire Wire Line
 	1850 4200 1800 4200
 Wire Wire Line
-	1800 4200 1800 5450
-Wire Wire Line
-	1800 5450 1800 6100
+	1800 4200 1800 6100
 Wire Wire Line
 	1800 5450 1850 5450
 Connection ~ 1800 5450
@@ -607,9 +575,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 4050 3300 4050
 Wire Wire Line
-	3300 4050 3300 5300
-Wire Wire Line
-	3300 5300 3300 6100
+	3300 4050 3300 6100
 Wire Wire Line
 	3300 5300 3450 5300
 Connection ~ 3300 5300
@@ -742,9 +708,7 @@ F 3 "" H 7250 3150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6700 3900 6950 3900
-Wire Wire Line
-	6950 3900 7050 3900
+	6700 3900 7050 3900
 Wire Wire Line
 	6950 3900 6950 3150
 Wire Wire Line
@@ -755,9 +719,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 3150 7850 3800
 Wire Wire Line
-	7650 3800 7850 3800
-Wire Wire Line
-	7850 3800 8000 3800
+	7650 3800 8000 3800
 $Comp
 L R R304
 U 1 1 5936686E
@@ -781,9 +743,7 @@ F 3 "" H 6550 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6700 5150 6950 5150
-Wire Wire Line
-	6950 5150 7050 5150
+	6700 5150 7050 5150
 Wire Wire Line
 	6950 5150 6950 4400
 Wire Wire Line
@@ -794,15 +754,11 @@ Wire Wire Line
 Wire Wire Line
 	7850 4400 7850 5050
 Wire Wire Line
-	7650 5050 7850 5050
-Wire Wire Line
-	7850 5050 8000 5050
+	7650 5050 8000 5050
 Wire Wire Line
 	7050 3700 7000 3700
 Wire Wire Line
-	7000 3700 7000 4950
-Wire Wire Line
-	7000 4950 7000 5600
+	7000 3700 7000 5600
 Wire Wire Line
 	7000 4950 7050 4950
 Connection ~ 7000 4950
@@ -842,8 +798,6 @@ F 3 "" H 8150 5050 50  0001 C CNN
 $EndComp
 Connection ~ 7850 5050
 Wire Wire Line
-	8300 3800 9150 3800
-Wire Wire Line
 	8300 5050 8650 5050
 Text Notes 5900 5750 0    60   ~ 0
 Headphone Output
@@ -868,9 +822,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 4200 9150 4200
 Wire Wire Line
-	9150 4000 9000 4000
-Wire Wire Line
-	9000 4000 9000 5600
+	9000 3800 9000 5600
 $Comp
 L GND #PWR014
 U 1 1 59367884
@@ -940,28 +892,20 @@ $EndComp
 Wire Wire Line
 	8000 1400 8000 1450
 Wire Wire Line
-	8000 1450 8250 1450
-Wire Wire Line
-	8250 1450 8500 1450
+	8000 1450 8500 1450
 Wire Wire Line
 	8500 1450 8500 1400
 Wire Wire Line
-	8250 1400 8250 1450
-Wire Wire Line
-	8250 1450 8250 1600
+	8250 1400 8250 1600
 Connection ~ 8250 1450
 Wire Wire Line
 	8000 1100 8000 1050
 Wire Wire Line
-	8000 1050 8250 1050
-Wire Wire Line
-	8250 1050 8500 1050
+	8000 1050 8500 1050
 Wire Wire Line
 	8500 1050 8500 1100
 Wire Wire Line
-	8250 850  8250 1050
-Wire Wire Line
-	8250 1050 8250 1100
+	8250 850  8250 1100
 Connection ~ 8250 1050
 Text Notes 6000 2400 0    60   ~ 0
 Power
@@ -970,4 +914,10 @@ NoConn ~ 3450 5450
 NoConn ~ 9150 4100
 NoConn ~ 9150 3900
 NoConn ~ 9150 3700
+Wire Wire Line
+	9000 3800 9150 3800
+Wire Wire Line
+	8300 3800 8300 4000
+Wire Wire Line
+	8300 4000 9150 4000
 $EndSCHEMATC
